@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import BirthdayCakePage from './BirthdayCakePage';
+import Vy from '../../public/images/vy.jpg';
+
 export default function BirthdayBook() {
   const [currentPage, setCurrentPage] = useState(0);
   const [isFlipping, setIsFlipping] = useState(false);
@@ -155,11 +157,10 @@ export default function BirthdayBook() {
             <div className="relative">
               <div className="w-64 h-64 bg-white rounded-lg shadow-lg border-4 border-pink-200 overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}images/vy.jpg`}
+                  src={Vy}
                   alt="Vy"
                   className="object-cover w-full h-full"
                 />
-
               </div>
 
               {/* Decorative corners */}
