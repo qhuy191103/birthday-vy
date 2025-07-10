@@ -40,10 +40,11 @@ export default function BirthdayCakePage() {
       {!showImage && (
         <div className="relative w-44 h-44 sm:w-56 sm:h-56 mb-6">
           <img
-            src="/images/banhsinhnhat.jpg"
+            src={`${import.meta.env.BASE_URL}images/banhsinhnhat.jpg`}
             alt="Birthday Cake"
             className="w-full h-full object-contain"
           />
+
           {!candlesBlown && (
             <>
               <div className="absolute top-4 left-8 w-2 h-10 bg-orange-400 animate-flicker rounded-sm"></div>
@@ -74,10 +75,11 @@ export default function BirthdayCakePage() {
       {showImage && (
         <div className="flex flex-col items-center text-center mt-[-40px]">
           <img
-            src="/images/special-surprise.jpg"
+            src={`${import.meta.env.BASE_URL}images/special-surprise.jpg`}
             alt="Surprise"
             className="w-auto max-w-[350px] max-h-[300px] object-contain rounded-lg shadow-lg border-4 border-pink-200 mb-6 transition-transform duration-300 hover:scale-105"
           />
+
           <p className="text-xs text-gray-500 mb-2">2:29 AM 11/07/2025</p>
           <p className="text-pink-700 font-semibold text-base">
             đây là món quà nhỏ mà to bự anh dành cho bé hehe,<br />
