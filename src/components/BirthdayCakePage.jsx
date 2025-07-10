@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import BanhSinhNhat from '../../public/images/banhsinhnhat.jpg';
 import SurpriseImage from '../../public/images/special-surprise.jpg';
 
 export default function BirthdayCakePage() {
@@ -30,7 +29,7 @@ export default function BirthdayCakePage() {
   }, [candlesBlown, countdown]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-pink-100 flex flex-col justify-center items-center px-4 text-center">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-pink-100 flex flex-col justify-start items-center px-4 text-center pt-16">
       {/* Chỉ hiển thị tiêu đề khi chưa show ảnh */}
       {!showImage && (
         <h2 className="text-2xl font-bold text-pink-600 mb-4">
@@ -41,12 +40,9 @@ export default function BirthdayCakePage() {
       {/* Bánh sinh nhật */}
       {!showImage && (
         <div className="relative w-44 h-44 sm:w-56 sm:h-56 mb-6">
-          <img
-            src={BanhSinhNhat}
-            alt="Birthday Cake"
-            className="w-full h-full object-contain"
-          />
-
+          <div className="w-full h-full bg-orange-300 rounded-full flex items-center justify-center text-6xl">
+            🎂
+          </div>
 
           {!candlesBlown && (
             <>
@@ -76,13 +72,12 @@ export default function BirthdayCakePage() {
 
       {/* Hình ảnh bất ngờ */}
       {showImage && (
-        <div className="flex flex-col items-center text-center mt-[-40px]">
+        <div className="flex flex-col items-center text-center mt-8">
           <img
             src={SurpriseImage}
             alt="Surprise"
             className="w-auto max-w-[350px] max-h-[300px] object-contain rounded-lg shadow-lg border-4 border-pink-200 mb-6 transition-transform duration-300 hover:scale-105"
           />
-
 
           <p className="text-xs text-gray-500 mb-2">2:29 AM 11/07/2025</p>
           <p className="text-pink-700 font-semibold text-base">
@@ -91,7 +86,6 @@ export default function BirthdayCakePage() {
           </p>
         </div>
       )}
-
 
       <style jsx>{`
         @keyframes flicker {
