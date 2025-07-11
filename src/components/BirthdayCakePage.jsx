@@ -82,7 +82,7 @@ export default function BirthdayCakePage() {
           <p className="text-xs text-gray-500 mb-2">2:29 AM 11/07/2025</p>
           <p className="text-pink-700 font-semibold text-base">
             đây là món quà nhỏ mà to bự anh dành cho bé hehe,<br />
-            ngày 31/07 sẽ có món quà siêu to hơn cùng chờ nhenn 🎁
+            ngày 31/07 sẽ có món quà siêu to khủm lồ nữa óoo  🎁
           </p>
         </div>
       )}
